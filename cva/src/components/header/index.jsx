@@ -1,22 +1,32 @@
-import React from 'react'
-import {Container} from './styled'
+import React from "react";
+import { Header, Logo, Nav } from "./styled";
 
 export default function index() {
   return (
-      <Container>
-          <header>
-              <div className="logo"><img src="" alt=""/></div>
-              <div>
-                  <nav>
-                      <ul>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Projetos</a></li>
-                <li><a href="#">Conhecimentos</a></li>
-                <li><a href="#">Contato</a></li>
-                      </ul>
-                  </nav>
-              </div>
-          </header>
-      </Container>
-  )
+    <div>
+      <Header>
+        <Logo>
+          <h1>Charles Eduardo</h1>
+        </Logo>
+        <div>
+          <Nav>
+            <ul>
+              <li>
+                <a href="#">Sobre</a>
+              </li>
+              <li>
+                <a href="#">Projetos</a>
+              </li>
+              <li>
+                <a href="#">Conhecimentos</a>
+              </li>
+              <li>
+                <a href="#">Contato</a>
+              </li>
+            </ul>
+          </Nav>
+        </div>
+      </Header>
+    </div>
+  );
 }
