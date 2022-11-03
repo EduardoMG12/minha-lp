@@ -9,16 +9,15 @@ export const ContainerAbout = styled.div`
   height: 100vh;
 `;
 
-export const AboutImg = styled.img`
+export const AboutImg = styled.div`
   background-image: url(${imgMe});
-  background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
-
-  width: 800px;
-  height: 800px;
+  background-size: cover;
   min-width: 200px;
   min-height: 200px;
+  background-repeat: no-repeat;
+  width: 800px;
+  height: 800px;
   flex-shrink: 0;
 `;
 
@@ -41,7 +40,6 @@ export const AboutTexts = styled.div`
       -webkit-box-shadow: 0px 0px 60px -10px rgba(0, 187, 201, 1);
       -moz-box-shadow: 0px 0px 60px -10px rgba(0, 187, 201, 1);
       box-shadow: 0px 0px 60px -10px rgba(0, 187, 201, 1);
-
       transform: scaleX(1.1);
     }
   }
