@@ -1,18 +1,16 @@
 import styled from "styled-components";
 
 export const Logo = styled.div`
-  max-width: 290px;
-  background-color: red;
-
   h1 {
-    color: gray;
+    color: var(--header-color);
+    width: 400px;
     font-family: "Inconsolata", monospace;
     font-weight: 200;
     transition: font-weight 0.3s ease-in-out, transform 0.5s ease-in-out,
       letter-spacing 0.5s cubic-bezier(0.15, 0.16, 0, 1.65);
     &:hover {
       font-weight: 800;
-      letter-spacing: 2px;
+      letter-spacing: 3px;
       transform: scale(1.1);
     }
   }
@@ -20,6 +18,7 @@ export const Logo = styled.div`
 
 export const Header = styled.div`
   position: fixed;
+  background-color: var(--header-background);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -30,9 +29,9 @@ export const Header = styled.div`
   z-index: 2;
   transition: all 2s ease-in-out;
   &:hover {
-    -webkit-box-shadow: inset 0px -20px 32px -20px rgba(0, 187, 201, 0.51);
-    -moz-box-shadow: inset 0px -20px 32px -20px rgba(0, 187, 201, 0.51);
-    box-shadow: inset 0px -20px 32px -20px rgba(0, 187, 201, 0.51);
+    -webkit-box-shadow: inset 0px -20px 32px -20px var(--header-color);
+    -moz-box-shadow: inset 0px -20px 32px -20px var(--header-color);
+    box-shadow: inset 0px -20px 32px -20px var(--header-color);
   }
 `;
 
@@ -46,15 +45,16 @@ export const Nav = styled.nav`
   li {
   }
   a {
-    color: gray;
+    padding: 7px;
+    color: var(--header-color);
     font-size: 25px;
-    border-radius: 50px;
-    transition: color 0.3s ease-in-out, letter-spacing 0.5s cubic-bezier(0.15, 0.16, 0, 1.65),
+    border-radius: 25px;
+    transition: background-color 0.3s ease-in-out, letter-spacing 0.5s cubic-bezier(0.15, 0.16, 0, 1.65),
       box-shadow 1s cubic-bezier(0.15, 0.16, 0, 1.65);
     &:hover {
-      letter-spacing: 2px;
-      -webkit-box-shadow: 0px 18px 33px -20px rgba(0, 187, 201, 0.7);
-      box-shadow: 0px 18px 20px -10px rgba(0, 187, 201, 0.7);
+      letter-spacing: 3px;
+      color: var(--header-background);
+      background-color: var(--header-color);
     }
   }
 `;
