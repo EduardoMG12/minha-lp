@@ -33,6 +33,11 @@ export const Header = styled.div`
     -moz-box-shadow: inset 0px -20px 32px -20px var(--header-color);
     box-shadow: inset 0px -20px 32px -20px var(--header-color);
   }
+  @media (max-width: 1268px) {
+    gap: 30px;
+    flex-direction: column-reverse;
+    text-align: center;
+  }
 `;
 
 export const Nav = styled.nav`
@@ -41,6 +46,9 @@ export const Nav = styled.nav`
     justify-content: center;
     align-items: center;
     gap: 20px;
+    @media (max-width: 1268px) {
+      flex-direction: column;
+    }
   }
   li {
   }
@@ -55,6 +63,16 @@ export const Nav = styled.nav`
       letter-spacing: 3px;
       color: var(--header-background);
       background-color: var(--header-color);
+    }
+    @media (max-width: 1268px) {
+      transition: background-color 0.7s ease-in-out, letter-spacing 0.5s cubic-bezier(0.15, 0.16, 0, 1.65),
+        box-shadow 3s cubic-bezier(0.15, 0.16, 0, 1.65);
+      &:hover {
+        border-radius: 2px;
+        padding: 15px 300px;
+        font-size: 25px;
+        border-radius: 25px;
+      }
     }
   }
 `;

@@ -7,7 +7,11 @@ export const ContainerAbout = styled.div`
   flex-grow: 1;
   justify-content: space-around;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
+  @media (max-width: 1268px) {
+    flex-direction: column;
+    gap: 70px;
+  }
 `;
 
 export const AboutImg = styled.div`
@@ -20,6 +24,8 @@ export const AboutImg = styled.div`
   width: 800px;
   height: 800px;
   flex-shrink: 0;
+  @media (max-width: 1268px) {
+  }
 `;
 
 export const CAboutTexts = styled.div``;
@@ -43,6 +49,10 @@ export const AboutTexts = styled.div`
     -webkit-box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
     -moz-box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
     box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
+    @media (max-width: 1268px) {
+      flex-direction: column;
+      gap: 70px;
+    }
     &:hover {
       -webkit-box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.4);
       -moz-box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.4);
