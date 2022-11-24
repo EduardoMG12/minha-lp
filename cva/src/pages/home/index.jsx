@@ -1,7 +1,7 @@
 import React from "react";
 import { Container } from "./styled";
 import About from "../../components/About";
-import CProject from "../../components/ProjectContainer";
+import Carousel from "../../components/ProjectContainer";
 
 export default function index() {
   return (
@@ -10,7 +10,7 @@ export default function index() {
         <div className="imgHome" />
       </div>
       <About />
-      <CProject />
+      <Carousel />
     </Container>
   );
 }

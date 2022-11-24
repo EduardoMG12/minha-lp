@@ -1,30 +1,27 @@
 import styled from "styled-components";
 
-export const ProjectsContainer = styled.section`
+export const CCarousel = styled.section`
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 60px;
-`;
-
-export const Projects = styled.div`
-  display: flex;
   justify-content: center;
-  width: 100%;
-  gap: 25px;
-`;
-
-export const Project = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
   align-items: center;
-  border: 2px solid white;
-  border-radius: 25px;
-  height: 80vh;
-  width: 25%;
-  p {
-    font-size: 25px;
+  padding: 100px 0;
+  gap: 60px;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+
+  .carousel {
+    width: 70vw;
+    @media (max-width: 768px) {
+      width: 100vw;
+    }
+  }
+  .legend {
+    padding: 20px;
+    background-color: var(--header-background);
+    color: var(--header-color);
+    transition: padding 1s cubic-bezier(0.15, 0.16, 0, 1.65);
   }
 `;

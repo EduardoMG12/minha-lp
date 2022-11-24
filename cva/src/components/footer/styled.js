@@ -2,16 +2,19 @@ import styled from "styled-components";
 
 export const ContainerFooter = styled.footer`
   width: 100%;
-  height: 15vh;
-  background-color: black;
+  height: 5vh;
+  background-color: var(--header-background);
   display: flex;
-  justify-content: center;
-`;
-export const FooterAbout = styled.div`
-  display: flex;
-  flex-direction: column;
-  p {
-    color: #00bbc9;
+  justify-content: start;
+  align-items: end;
+  & h1 {
+    color: var(--header-color);
+    font-size: 1.5rem;
+    & a {
+      color: var(--header-color);
+      font-size: 1.5rem;
+    }
   }
 `;
+
 export const FooterContact = styled.div``;
