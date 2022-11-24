@@ -8,9 +8,15 @@ export const CCarousel = styled.section`
   align-items: center;
   padding: 100px 0;
   gap: 60px;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 
   .carousel {
     width: 70vw;
+    @media (max-width: 768px) {
+      width: 100vw;
+    }
   }
   .legend {
     padding: 20px;

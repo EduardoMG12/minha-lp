@@ -1,15 +1,15 @@
 import React from "react";
-import { ContainerFooter, FooterAbout, FooterContact } from "./styled";
+import { ContainerFooter } from "./styled";
 
 export default function Footer() {
   return (
     <ContainerFooter>
-      <FooterAbout>
-        <p>Termos</p>
-        <p>Privacidade</p>
-        <p></p>
-      </FooterAbout>
-      <FooterContact></FooterContact>
+      <h1>
+        © 2022, Create by
+        <a target="_blank" href="https://github.com/EduardoMG12">
+          Eduardo Mello
+        </a>
+      </h1>
     </ContainerFooter>
   );
 }

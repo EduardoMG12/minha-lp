@@ -8,6 +8,7 @@ export default function Carrosel() {
     <CCarousel>
       <Carousel
         className="carousel"
+        dynamicHeight={true}
         centerMode={true}
         autoPlay={true}
         interval={2000}
